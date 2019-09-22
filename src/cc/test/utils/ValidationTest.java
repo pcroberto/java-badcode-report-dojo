@@ -128,7 +128,7 @@ public class ValidationTest {
         p.setName("Roberto");
         p.setCpf("02579742026");
         ArrayList<String> pessoaTelefonesFixos = new ArrayList<String>();
-        pessoaTelefonesFixos.add("12334567895");
+        pessoaTelefonesFixos.add("1234567895");
         p.setTelefonesCelulares(pessoaTelefonesFixos);
         p.setTelefonesFixos(pessoaTelefonesFixos);
 

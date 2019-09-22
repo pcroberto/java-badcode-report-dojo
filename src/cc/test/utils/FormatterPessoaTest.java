@@ -14,13 +14,18 @@ public class FormatterPessoaTest {
     @Test
     public void shouldReturnFomattedNames() {
         Pessoa p = new Pessoa();
-        p.setName("Fulano");
-        p.setCpf("0033435457");
+        p.setName("Roberto");
+        p.setCpf("02579742026");
+
+        ArrayList<String> pessoaTelefonesCelulares = new ArrayList<String>();
+        pessoaTelefonesCelulares.add("5199668550");
+        p.setTelefonesCelulares(pessoaTelefonesCelulares);
+
         ArrayList<String> pessoaTelefonesFixos = new ArrayList<String>();
-        pessoaTelefonesFixos.add("8765343");
-        p.setTelefonesCelulares(pessoaTelefonesFixos);
+        pessoaTelefonesFixos.add("5134031195");
         p.setTelefonesFixos(pessoaTelefonesFixos);
 
-        assertEquals("Fulano", this.formatter.format(p));
+        String expected = "Nome: Roberto\nFone: 5199668550\nFone: 5134031195\nCPF: 02579742026";
+        assertEquals(expected, this.formatter.format(p));
     }
 }

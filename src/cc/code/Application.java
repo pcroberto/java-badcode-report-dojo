@@ -8,7 +8,7 @@ import java.util.*;
  * Relatório de pessoas
  * @author Deus
  */
-public class report_de_pessoas {
+public class Application {
 
 	/**
 	 * codigo principal

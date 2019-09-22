@@ -41,7 +41,7 @@ public class Validation {
 
 	private boolean isTelefone(List<String> fones) {
 		for (String fone : fones) {
-			if (fone.length() < 10) {
+			if (fone.length() != 10) {
 				return false;
 			}
 		}
